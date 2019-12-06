@@ -20,10 +20,11 @@ def emp(request):
          form=EmployeeForm()
      return render(request,'index.html',{'form':form})
 
-# class Empviewset(viewsets.ModelViewSet):
-#     queryset = Employee.objects.all()
-#     serializer_class = Empserializer
-#     return JsonResponse({"empdata":serializer_class.data})
+class Empviewset(viewsets.ModelViewSet):
+    pass
+    # queryset = Employee.objects.all()
+    # serializer_class = Empserializer
+    # return JsonResponse({"empdata":serializer_class.data})
 
 
 def show(request):
